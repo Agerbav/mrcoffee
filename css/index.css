@@ -304,6 +304,7 @@ body{
   padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 #reward-header{
   /* border: 1px solid; */
@@ -321,8 +322,8 @@ body{
   padding: 1em;
   gap: 2em;
   display: grid;
-  grid-template-columns: repeat(6, 200px);
-  grid-template-rows: 200px;
+  grid-template-columns: repeat(6, 160px);
+  grid-template-rows: 160px;
   /* grid-template-columns: 100px 100px 100px 100px 100px 100px; */
   justify-content: center;
 }
@@ -344,6 +345,20 @@ body{
 .reward-item:hover{
   border: 1px solid;
   transform: scale(1.1);
+}
+#reward-left-btn{
+  font-size: 2em;
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  left: 10%;
+}
+#reward-right-btn{
+  font-size: 2em;
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  right: 10%;
 }
 
 /* about section */
