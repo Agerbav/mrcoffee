@@ -1,8 +1,6 @@
 body{
   margin: 0;
   background: linear-gradient(to bottom right, rgb(113 77 56), rgb(212 158 115));
-  /* background: radial-gradient(rgba(255, 0, 0, 0), rgb(113 77 56)); */
-  /* background-image: url(/assets/tile.png), linear-gradient(to bottom right, rgb(113 77 56), rgb(212 158 115)); */
   color: white;
   font-weight: bolder;
   text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
@@ -59,21 +57,6 @@ body{
     background-size: 15%;
   }
 
-}
-#bg-container{
-  /* border: 1px solid; */
-  position: absolute;
-  top: 1em;
-  right: 4em;
-  display: flex;
-  animation-name: spin;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  z-index: -999;
-}
-.bg-gear{
-  width: 20%;
-  height: auto;
 }
 @keyframes scroll-left{
   from{transform: translateX(0);}
@@ -317,8 +300,8 @@ body{
   cursor: default;
 }
 #rewards-container{
-  overflow-x: hidden;
   border: 1px solid;
+  overflow-x: hidden;
   padding: 1em;
   gap: 2em;
   display: grid;
