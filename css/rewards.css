@@ -102,8 +102,10 @@ body{
 }
 .navitem{
   /* border: 1px solid; */
+  border-radius: 20px;
   text-decoration: none;
   color: white;
+  padding: 8px;
   padding-left: 2em;
   padding-right: 2em;
   transition: 150ms ease;
@@ -111,9 +113,110 @@ body{
 .navitem:hover{
   transform: scale(1.1);
 }
+.current-nav{
+  background: linear-gradient(to bottom right, rgb(113 77 56), rgb(212 158 115));
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
+}
 @media(max-width:768px){
   #navbar{
     font-size: 10px;
   }
 }
 
+/* download section */
+#download-section{
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+#download-container{
+  /* border: 1px solid; */
+  border-radius: 20px;
+  background: linear-gradient(to bottom right, rgb(113 77 56), rgb(212 158 115));
+  width: 80dvw;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+#download-container #text-container{
+  display: flex;
+  flex-direction: column;
+}
+#download-container #download-header{
+  border: 1px solid;
+  font-size: 2rem;
+}
+#download-container #link-container{
+  border: 1px solid;
+}
+#download-container #link-container > a{
+  text-decoration: none;
+  color: white;
+}
+#download-container #screenshot-container{
+  border: 1px solid;
+}
+
+/* rewards section */
+#rewards-section{
+  /* border: 1px solid; */
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#reward-header{
+  /* border: 1px solid; */
+  /* position: absolute; */
+  font-size: calc(3dvw + 1rem);
+  padding: 10px;
+  text-align: center;
+}
+#reward-header:hover{
+  cursor: default;
+}
+#rewards-container{
+  /* border: 1px solid; */
+  border: 5px dashed rgb(212 158 115);
+  border-radius: 20px;
+  width: 80dvw;
+  overflow-x: hidden;
+  padding: 1rem;
+  gap: 2rem;
+  display: flex;
+  /* justify-content: center; */
+  align-self: center;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  animation: slidein 1s ease;
+  animation-timeline: view();
+  animation-range: entry 0;
+  transition: 100ms ease;
+}
+.reward-item{
+  /* border: 1px solid; */
+  flex: none;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, rgba(113, 77, 56, 1), rgba(212, 158, 115, 1));
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  align-items: center;
+  min-width: 200px;
+  height: 200px;
+  text-decoration: none;
+  color: white;
+
+}
+.reward-item img{
+  border-radius: 20px;
+  width: 150px;
+}
+.reward-item:hover{
+  cursor: pointer;
+  border: 1px solid;
+  transform: scale(1.1);
+}

@@ -102,14 +102,20 @@ body{
 }
 .navitem{
   /* border: 1px solid; */
+  border-radius: 20px;
   text-decoration: none;
   color: white;
+  padding: 8px;
   padding-left: 2em;
   padding-right: 2em;
   transition: 150ms ease;
 }
 .navitem:hover{
   transform: scale(1.1);
+}
+.current-nav{
+  background: linear-gradient(to bottom right, rgb(113 77 56), rgb(212 158 115));
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
 }
 @media(max-width:768px){
   #navbar{
@@ -165,23 +171,33 @@ body{
 #menu-container #menu-items{
   border: 1px solid;
   padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   width: 80%;
 
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
 
 }
 #menu-container #menu-items .item-box{
-  border: 1px solid;
+  /* border: 1px solid; */
   border-radius: 20px;
   background: linear-gradient(to bottom right, rgb(113 77 56), rgb(212 158 115));
   padding: 1rem;
+  display: flex;
 
   animation: slidein ease 1s;
+  transition: 500ms ease;
 }
 #menu-container #menu-items .item-box > img{
+  border-radius: 20px;
   width: 100px;
   height: 100px;
 }
-
+#menu-container #menu-items .item-box:hover{
+  transform: scale(1.1);
+  border: 1px solid;
+}
