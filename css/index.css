@@ -282,7 +282,7 @@ body{
 
 /* rewards section */
 #rewards-section{
-  border: 1px solid;
+  /* border: 1px solid; */
   padding-top: 4rem;
   padding-bottom: 4rem;
   display: flex;
@@ -300,48 +300,51 @@ body{
   cursor: default;
 }
 #rewards-container{
-  border: 1px solid;
+  /* border: 1px solid; */
+  border: 5px dashed rgb(212 158 115);
+  border-radius: 20px;
+  width: 80dvw;
   overflow-x: hidden;
-  padding: 1em;
-  gap: 2em;
-  display: grid;
-  grid-template-columns: repeat(6, 160px);
-  grid-template-rows: 160px;
-  /* grid-template-columns: 100px 100px 100px 100px 100px 100px; */
-  justify-content: center;
+  padding: 1rem;
+  gap: 2rem;
+  display: flex;
+  /* justify-content: center; */
+  align-self: center;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
 }
 .reward-item{
   /* border: 1px solid; */
+  flex: none;
   border-radius: 20px;
   background-image: linear-gradient(to right, rgba(113, 77, 56, 1), rgba(212, 158, 115, 1));
   display: flex;
-  gap: 1em;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  align-items: center;
+  min-width: 200px;
+  height: 200px;
+
+  animation: slidein 1s ease;
+  animation-timeline: view();
+  animation-range: entry 0;
+  transition: 1s ease;
 }
 .reward-item img{
   border-radius: 20px;
-  width: 50%;
-  height: 50%;
+  width: 150px;
 }
 .reward-item:hover{
   border: 1px solid;
   transform: scale(1.1);
 }
-#reward-left-btn{
-  font-size: 2em;
-  width: 50px;
-  height: 100px;
-  position: absolute;
-  left: 10%;
-}
-#reward-right-btn{
-  font-size: 2em;
-  width: 50px;
-  height: 100px;
-  position: absolute;
-  right: 10%;
+#rewards-container #more-btn{
+  border: 1px solid;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, rgba(113, 77, 56, 1), rgba(212, 158, 115, 1));
+  height: 50%;
+  padding: 1rem;
 }
 
 /* about section */

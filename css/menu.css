@@ -117,3 +117,71 @@ body{
   }
 }
 
+/* menu section */
+#menu-section{
+  /* border: 1px solid; */
+  padding: 1rem;
+}
+#menu-container{
+  border: 1px solid;
+  border-radius: 20px;
+  background: linear-gradient(to bottom right, rgb(113 77 56), rgb(212 158 115));
+  margin: 1rem;
+  padding: 1rem;
+  height: 80dvh;
+  display: flex;
+  gap: 1rem;
+
+  animation: slidein 1s ease;
+}
+#menu-container #menu-bar{
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 1rem;
+  gap: 1rem;
+  background: linear-gradient(to bottom right, rgb(113 77 56), rgb(212 158 115));
+  
+  display: flex;
+  flex-direction: column;
+}
+
+#menu-container #menu-bar > button{
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(to bottom right, rgb(113 77 56), rgb(212 158 115));
+
+  width: 250px;
+  height: 100px;
+
+  animation: slidein ease 1s;
+  transition: 500ms;
+} 
+#menu-container #menu-bar > button:hover{
+  border:1px solid white;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#menu-container #menu-items{
+  border: 1px solid;
+  padding: 1rem;
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+#menu-container #menu-items .item-box{
+  border: 1px solid;
+  border-radius: 20px;
+  background: linear-gradient(to bottom right, rgb(113 77 56), rgb(212 158 115));
+  padding: 1rem;
+
+  animation: slidein ease 1s;
+}
+#menu-container #menu-items .item-box > img{
+  width: 100px;
+  height: 100px;
+}
+
