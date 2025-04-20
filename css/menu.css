@@ -169,7 +169,7 @@ body{
 }
 
 #menu-container #menu-items{
-  border: 1px solid;
+  border: 5px dashed rgb(113 77 56);
   padding: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
