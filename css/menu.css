@@ -184,6 +184,7 @@ body{
 }
 #menu-container #menu-items .item-box{
   /* border: 1px solid; */
+  position: relative;
   border-radius: 20px;
   background: linear-gradient(to bottom right, rgb(113 77 56), rgb(212 158 115));
   padding: 1rem;
@@ -196,6 +197,36 @@ body{
   border-radius: 20px;
   width: 100px;
   height: 100px;
+}
+#menu-container #menu-items .item-box .detail-container{
+  /* border: 1px solid; */
+  margin-left: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#menu-container #menu-items .item-box > a{
+  /* border: 1px solid; */
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 20px;
+  background: rgb(113 77 56);
+  text-decoration: none;
+  color: white;
+  height: fit-content;
+
+  padding: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
+
+  transition: 500ms ease;
+}
+#menu-container #menu-items .item-box > a:hover{
+  border: 1px solid;
+  transform: scale(1.1);
 }
 #menu-container #menu-items .item-box:hover{
   transform: scale(1.1);
