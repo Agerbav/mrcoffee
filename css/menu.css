@@ -116,7 +116,7 @@ body{
 .current-nav{
   background: linear-gradient(to bottom right, rgb(113 77 56), rgb(212 158 115));
   box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
-}
+}r
 @media(max-width:768px){
   #navbar{
     font-size: 10px;
@@ -135,13 +135,15 @@ body{
   margin: 1rem;
   padding: 1rem;
   height: 80dvh;
+  width: 60dvw;
+  justify-self: center;
   display: flex;
   gap: 1rem;
 
   animation: slidein 1s ease;
 }
 #menu-container #menu-bar{
-  border: 1px solid;
+  /* border: 1px solid; */
   border-radius: 20px;
   padding: 1rem;
   gap: 1rem;
@@ -150,22 +152,33 @@ body{
   display: flex;
   flex-direction: column;
 }
-
-#menu-container #menu-bar > button{
+#menu-container #menu-bar #type-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#menu-container #menu-bar #type-container > button{
   border: none;
   border-radius: 20px;
   background: linear-gradient(to bottom right, rgb(113 77 56), rgb(212 158 115));
 
-  width: 250px;
-  height: 100px;
+  width: auto;
+  padding: 1rem;
 
   animation: slidein ease 1s;
   transition: 500ms;
 } 
-#menu-container #menu-bar > button:hover{
+#menu-container #menu-bar #type-container > button:hover{
   border:1px solid white;
   cursor: pointer;
   transform: scale(1.1);
+}
+#menu-container #menu-bar > input[type=text]{
+  background: rgb(212 158 115);
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 #menu-container #menu-items{
@@ -204,7 +217,7 @@ body{
 
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 5px;
 }
 #menu-container #menu-items .item-box > a{
   /* border: 1px solid; */
@@ -229,6 +242,38 @@ body{
   transform: scale(1.1);
 }
 #menu-container #menu-items .item-box:hover{
-  transform: scale(1.1);
+  transform: scale(0.95);
   border: 1px solid;
+}
+@media(max-width: 1024px){
+  #menu-container{
+    width: 80dvw;
+  }
+  #menu-container #menu-items .item-box{
+    flex-direction: column;
+  }
+  #menu-container #menu-items .item-box > img{
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    /* height: 50px; */
+  }
+  #menu-container #menu-items .item-box .detail-container .item-name{
+    font-size: calc(2dvw + 1rem);
+  }
+  #menu-container #menu-items .item-box .detail-container .item-price{
+    font-size: calc(1dvw + 1rem);
+  }
+}
+@media(max-width: 768px){
+  #menu-container{
+    flex-direction: column;
+  }
+  #menu-container #menu-bar #type-container{
+    flex-direction: row;
+    overflow-x: auto;
+  }
+  #menu-container #menu-bar #type-container::-webkit-scrollbar(j){
+    scrollbar-width: auto;
+  }
 }
