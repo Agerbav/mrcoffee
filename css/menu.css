@@ -116,7 +116,7 @@ body{
 .current-nav{
   background: linear-gradient(to bottom right, rgb(113 77 56), rgb(212 158 115));
   box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
-}r
+}
 @media(max-width:768px){
   #navbar{
     font-size: 10px;
@@ -164,6 +164,10 @@ body{
 
   width: auto;
   padding: 1rem;
+
+  color: white;
+  text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
 
   animation: slidein ease 1s;
   transition: 500ms;
@@ -276,4 +280,21 @@ body{
   #menu-container #menu-bar #type-container::-webkit-scrollbar(j){
     scrollbar-width: auto;
   }
+}
+/* footer section */
+footer{
+  background: rgb(113 77 56);
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  gap: 2rem;
+  /* box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1); */
+}
+footer > a{
+  transition: 250ms ease;
+}
+footer > a:hover{
+  transform: scale(1.1);
 }
