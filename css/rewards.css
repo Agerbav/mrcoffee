@@ -132,8 +132,8 @@ body{
 #download-container{
   border-radius: 20px;
   background: linear-gradient(to bottom right, rgb(113 77 56), rgb(212 158 115));
-  width: 80dvw;
-  height: 80dvh;
+  width: fit-content;
+  height: fit-content;
   padding: 1rem;
   display: flex;
   flex-direction: row;
@@ -144,6 +144,7 @@ body{
   animation: slidein 1s ease;
 }
 #download-container #text-container{
+  /* border: 1px solid; */
   display: flex;
   flex-direction: column;
 }
@@ -159,14 +160,14 @@ body{
   color: white;
 }
 #download-container #screenshot-container{
-  /* border: 1px solid; */
-  border-radius: 20px;
+  border: 5px dashed rgba(212, 158, 115, 1);
   width: 50%;
   display: flex;
   overflow-x: auto;
-  gap: 1rem;
+  margin: 1rem;
 }
 #download-container #screenshot-container > img{
+  margin: 1rem;
   border-radius: 20px;
   max-width: 30%;
 }
@@ -235,6 +236,11 @@ body{
   cursor: pointer;
   border: 1px solid;
   transform: scale(1.1);
+}
+@media(max-width: 768px){
+  #download-container{
+    flex-direction: column;
+  }
 }
 /* footer section */
 footer{
