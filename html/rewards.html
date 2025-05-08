@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rewards</title>
     <link rel="stylesheet" href="../css/rewards.css">
+    <link rel="stylesheet" href="../css/main.css">
   </head>
   <body>
     <div id="navbar">
@@ -14,6 +15,11 @@
       <a href="about.html" class="navitem">About us</a>
     </div>
     <main>
+      <div id="popup" class="open-popup" onclick="closePopup()">
+        <h3>Download our app!</h3>
+        <a href="">Play Store</a>
+        <a href="">App Store</a>
+      </div>
       <div id="download-section" class="bg-tile1">
         <div id="download-container">
           <div id="text-container">
@@ -38,16 +44,11 @@
           Our Rewards
         </div>
         <div id="rewards-container">
-          <a href="rewards.html" class="reward-item"><img src="../assets/cofee.png" alt="">reward 1</a>
-          <a href="rewards.html" class="reward-item"><img src="../assets/cofee.png" alt="">reward 2</a>
-          <a href="rewards.html" class="reward-item"><img src="../assets/cofee.png" alt="">reward 3</a>
-          <a href="rewards.html" class="reward-item"><img src="../assets/cofee.png" alt="">reward 4</a>
-          <a href="rewards.html" class="reward-item"><img src="../assets/cofee.png" alt="">reward 5</a>
-          <a href="rewards.html" class="reward-item"><img src="../assets/cofee.png" alt="">reward 6</a>
-          <a href="rewards.html" class="reward-item"><img src="../assets/cofee.png" alt="">reward 7</a>
-          <a href="rewards.html" class="reward-item"><img src="../assets/cofee.png" alt="">reward 8</a>
-          <a href="rewards.html" class="reward-item"><img src="../assets/cofee.png" alt="">reward 9</a>
-          <a href="rewards.html" class="reward-item"><img src="../assets/cofee.png" alt="">reward 10</a>
+          <a class="reward-item" onclick="openPopup()"><img src="../assets/cofee.png" alt="">reward 1</a>
+          <a class="reward-item" onclick="openPopup()"><img src="../assets/cofee.png" alt="">reward 2</a>
+          <a class="reward-item" onclick="openPopup()"><img src="../assets/cofee.png" alt="">reward 3</a>
+          <a class="reward-item" onclick="openPopup()"><img src="../assets/cofee.png" alt="">reward 4</a>
+          <a class="reward-item" onclick="openPopup()"><img src="../assets/cofee.png" alt="">reward 5</a>
         </div>
       </div>
     </main>
@@ -58,4 +59,5 @@
     <a href="https://www.facebook.com"><img src="../assets/icon/meta.png" alt="facebook" width="30px"></a>
     <a href="https://www.youtube.com"><img src="../assets/icon/youtube.png" alt="youtube" width="30px"></a>
   </footer>
+  <script src="../js/rewards.js"></script>
 </html>
