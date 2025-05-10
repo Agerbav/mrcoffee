@@ -1,0 +1,88 @@
+#form-section{
+    /* border: 1px solid; */
+    height: 80dvh;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+
+    justify-items: center;
+}
+#user-form-section{
+    /* border: 1px solid; */
+    border-radius: 20px;
+    width: 40dvw;
+    height: 70dvh;
+    background: linear-gradient(to bottom right, rgb(113 77 56), rgb(212 158 115));
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    animation: slidein 1s ease;
+}
+#user-form-section #user-form{
+   /* border: 1px solid; */
+
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+
+   width: 80%;
+
+}
+#user-form-section #user-form label{
+    /* border: 1px solid; */
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, rgb(113 77 56), rgb(212 158 115));
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
+    padding: .5rem;
+    padding-left: 1rem;
+    font-size: 1.5dvw;
+
+}
+#user-form-section #user-form input[type=text]{
+    border: none;
+    border-bottom: 2px solid rgb(113 77 56);
+    width: 90%;
+    background: none;
+    color: white;
+    font-size: 1dvw;
+    text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+    align-self: center;
+
+}
+#user-form-section #user-form input[type=email]{
+    border: none;
+    border-bottom: 2px solid rgb(113 77 56);
+    width: 90%;
+    background: none;
+    color: white;
+    font-size: 1dvw;
+    text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+    align-self: center;
+
+}
+#user-form-section #user-form button[type=submit]{
+    /* border: 1px solid; */
+    border: none;
+    border-radius: 20px;
+    color: white;
+    width: fit-content;
+    background: linear-gradient(to bottom right, rgb(113 77 56), rgb(212 158 115));
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1dvw;
+    text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+
+    transition: 500ms ease;
+}
+#user-form-section #user-form button[type=submit]:hover{
+    border: 1px solid;
+    transform: scale(1.1);
+    cursor: pointer;
+}
