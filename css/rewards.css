@@ -6,7 +6,7 @@
 }
 #download-container{
   border-radius: 20px;
-  background: linear-gradient(to bottom right, rgb(113 77 56), rgb(212 158 115));
+  background: var(--brown-gradient);
   width: fit-content;
   height: fit-content;
   padding: 1rem;
@@ -68,7 +68,7 @@
 }
 #rewards-container{
   /* border: 1px solid; */
-  border: 5px dashed rgb(212 158 115);
+  border: 5px dashed var(--light-brown);
   border-radius: 20px;
   width: fit-content;
   overflow-x: hidden;
@@ -137,24 +137,34 @@
   /* border: 1px solid; */
   position: fixed;
   border-radius: 20px;
-  background: linear-gradient(to bottom right, rgb(113 77 56), rgb(212 158 115));
+  background: var(--brown-gradient);
   padding: 5dvw;
   z-index: 999;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 55%;
+  transform: translate(-50%, 0);
   backdrop-filter: blur(0px);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
 }
-#popup h3{
-  font-size: calc(1dvw + 0.5rem);
+#popup div{
+  display: flex;
+  align-content: center;
+  gap: 1rem;
+}
+#popup div h3{
+  font-size: calc(5dvw + 0.5rem);
   margin-bottom: 0;
 }
-#popup a{
-  font-size: calc(1dvw + 0.25rem);
+#popup div a{
+  transition: 500ms ease;
 }
-.open-popup{
-  visibility: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#popup div a img{
+  width: fit-content;
+  height: 5dvh;
+}
+#popup div a:hover{
+  transform: scale(1.1);
 }
