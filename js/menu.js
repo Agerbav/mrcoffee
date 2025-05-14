@@ -1,3 +1,15 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".item-box");
+
+  items.forEach(item => {
+    const priceText = item.querySelector(".item-price").innerText.trim();
+    const itemId = item.id;
+    const link = item.querySelector("a");
+
+    const encodedPrice = encodeURIComponent(priceText);
+    link.href = `order.html#${itemId}&price=${encodedPrice}`;
+  });
+});
 
 function changeActive(curr){
     let types = document.querySelectorAll('button');

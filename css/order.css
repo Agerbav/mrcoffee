@@ -8,9 +8,18 @@
 
     justify-items: center;
 }
+#user-form-section #item-name{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    transform: translate(-50%, 0);
+}
+
 #user-form-section{
     /* border: 1px solid; */
     position: relative;
+    border-left: 100px solid var(--dark-brown);
+    /* margin-left: 0; */
     border-radius: 20px;
     width: 30dvw;
     height: 90dvh;
@@ -19,41 +28,45 @@
     padding: 2rem;
 
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    
+    gap: 1rem;
 
     animation: slidein 1s ease;
 }
-#user-form-section::before{
-    /* border: 1px solid; */
+/* #user-form-section::before{
+    border: 1px solid;
     border-radius: 20px 0 0 20px;
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
 
     position: absolute;
-    left: -50px;
+    left: 0px;
     content: '';
-    width: 100px;
+    width: 5dvw;
     height: 100%;
     background: var(--dark-brown);
     z-index: 0;
-}
+} */
+
 #user-form-section #user-form{
    /* border: 1px solid; */
    padding-top: 0;
 
    display: flex;
    flex-direction: column;
-   gap: 0;
+   gap: rem;
 
    width: 80%;
 
 }
 @media(max-width: 768px){
+    
     #form-section{
         height: 100dvh;
     }
     #user-form-section{
+            border-left: 25px solid var(--dark-brown);
+
         width: 70dvw;
         height: 90dvh;
     }
@@ -121,6 +134,7 @@
 }
 
 #user-form-section #user-form select{
+    margin-top: 1rem;
     padding-left: 1rem;
     background: var(--brown-gradient);
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
@@ -150,4 +164,16 @@
     transform: scale(1.1);
     cursor: pointer;
 }
+#user-form-section #user-form hr{
+    position: absolute;
+    border-color: white;
+    background-color: white;
+    color: white;
+    bottom: 100px;
+    width: 80%;
+}
 
+#user-form-section #user-form #price{
+    position: absolute;
+    bottom: 50px;
+}

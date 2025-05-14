@@ -1,3 +1,17 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const hash = window.location.hash.substring(1); // remove '#'
+  const [itemId, priceParam] = hash.split("&");
+  
+  const params = new URLSearchParams(priceParam);
+  const price = decodeURIComponent(params.get("price") || "Rp0");
+
+  const priceElement = document.getElementById("number");
+  if (priceElement) {
+    priceElement.textContent = price;
+  }
+
+});
+
 function hasUpperCase(str) {
     return str !== str.toLowerCase();
 }
@@ -61,6 +75,7 @@ function validateForm(){
     return isValid;
 
 }
+
 
 
 function openPopup() {
