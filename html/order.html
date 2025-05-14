@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Orders</title>
     <link href="../css/order.css" rel="stylesheet">
-    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div id="darken" onclick="closePopup()" style="display: none;">
+      <div id="popup">
+        Order Succesfully Placed
+      </div>
+    </div>
     <div id="navbar">
       <a href="index.html" class="navitem">Mr Coffee</a>
       <a href="menu.html" class="navitem">Menu</a>
@@ -17,19 +22,35 @@
     <main>
       <div id="form-section"  class="bg-tile1">
         <div id="user-form-section">
-          <div id="user-form">
+          <form id="user-form" name="myForm" onsubmit="return validateForm()">
             <label for="name">Name</label>
-            <input type="text" name="" value=""> <br>
+            <input type="text" name="name" value=""> <br>
+            <p id="name-valid"></p>
     
             <label for="email">Email</label>
-            <input type="email" name="" value=""> <br>
+            <input type="text" name="email" value=""> <br>
+            <p id="email-valid"></p>
+
+
+            <label for="password">Password</label>
+            <input type="password" name="password"> <br>
+            <p id="password-valid"></p>
             
             <label for="address">Address</label>
-            <input type="text" name="" value=""> <br>
-    
+            <input type="text" name="address" value=""> <br>
+            <p id="address-valid"></p>
+            
             <label for="addons">Add-ons</label>
+            <select name="addons" id="addons">
+              <option value="None">None</option>
+              <option value="More Sugar">More Sugar</option>
+              <option value="Less Sugar">Less Sugar</option>
+              <option value="More Ice">More Ice</option>
+              <option value="Less Ice">Less Ice</option>
+            </select>
+            
             <br><button type="submit">Order Now</button>
-          </div>
+          </form>
         </div>
       </div>
     </main>
@@ -40,4 +61,5 @@
     <a href="https://www.facebook.com"><img src="../assets/icon/meta.png" alt="facebook" width="30px"></a>
     <a href="https://www.youtube.com"><img src="../assets/icon/youtube.png" alt="youtube" width="30px"></a>
   </footer>
+<script defer src="../js/order.js"></script>
 </html>

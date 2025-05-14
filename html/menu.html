@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Menu</title>
     <link rel="stylesheet" href="../css/menu.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
     <div id="navbar">
@@ -20,52 +20,83 @@
           <div id="menu-bar">
             <input type="text" placeholder="Search...">
             <div id="type-container">
-              <button type="" onclick="" class="active">type1</button>
-              <button type="" onclick="" class="">type2</button>
-              <button type="" onclick="" class="">type3</button>
-              <button type="" onclick="" class="">type4</button>
-              <button type="" onclick="" class="">type5</button>
-              <button type="" onclick="" class="">type6</button>
+              <button type="" onclick="changeActive(this)" class="active all">All</button>
+              <button type="" onclick="changeActive(this)" class="espresso">Espresso</button>
+              <button type="" onclick="changeActive(this)" class="bread">Bread</button>
+              <button type="" onclick="changeActive(this)" class="brewed">Brewed</button>
+              <button type="" onclick="changeActive(this)" class="frappe">Frappe</button>
             </div>
           </div>
           <div id="menu-items">
-            <div class="item-box">
+            <div class="item-box espresso">
               <img src="../assets/cofee.png" alt=""> 
               <div class="detail-container">
-                <div class="item-name"> item1 </div>
+                <div class="item-name">Espresso Shot</div>
+                <div class="item-desc">Classic single or double shot</div>
+                <div class="item-price">Rp18,000</div>
+              </div>
+              <a href="order.html">Order</a>
+            </div>
+            <div class="item-box espresso">
+              <img src="../assets/cofee.png" alt=""> 
+              <div class="detail-container">
+                <div class="item-name">Americano</div>
+                <div class="item-desc">Espresso with hot water</div>
+                <div class="item-price">Rp25,000</div>
+              </div>
+              <a href="order.html">Order</a>
+            </div>
+            <div class="item-box frappe">
+              <img src="../assets/cofee.png" alt=""> 
+              <div class="detail-container">
+                <div class="item-name">Coffee Frappe</div>
+                <div class="item-desc">Blended iced coffee with milk and sugar</div>
+                <div class="item-price">Rp35,000</div>
+              </div>
+              <a href="order.html">Order</a>
+            </div>
+            <div class="item-box frappe">
+              <img src="../assets/cofee.png" alt=""> 
+              <div class="detail-container">
+                <div class="item-name">Mocha Frappe</div>
+                <div class="item-desc">Blended coffee with chocolate syrup and whipped cream</div>
+                <div class="item-price">Rp38,000</div>
+              </div>
+              <a href="order.html">Order</a>
+            </div>
+            <div class="item-box brewed">
+              <img src="../assets/cofee.png" alt=""> 
+              <div class="detail-container">
+                <div class="item-name">House Brew Coffee</div>
+                <div class="item-desc">Freshly brewed daily roast</div>
+                <div class="item-price">Rp22,000</div>
+              </div>
+              <a href="order.html">Order</a>
+            </div>
+            <div class="item-box brewed">
+              <img src="../assets/cofee.png" alt=""> 
+              <div class="detail-container">
+                <div class="item-name">Cold Brew</div>
+                <div class="item-desc">Slowly steeped coffee served chilled</div>
+                <div class="item-price">Rp28,000</div>
+              </div>
+              <a href="order.html">Order</a>
+            </div>
+            <div class="item-box bread">
+              <img src="../assets/cofee.png" alt=""> 
+              <div class="detail-container">
+                <div class="item-name">Croissant </div>
+                <div class="item-desc">Buttery, flaky pastry</div>
                 <div class="item-price"> Rp10000 </div>
               </div>
               <a href="order.html">Order</a>
             </div>
-            <div class="item-box">
+            <div class="item-box bread">
               <img src="../assets/cofee.png" alt=""> 
               <div class="detail-container">
-                <div class="item-name"> item1 </div>
-                <div class="item-price"> Rp10000 </div>
-              </div>
-              <a href="order.html">Order</a>
-            </div>
-            <div class="item-box">
-              <img src="../assets/cofee.png" alt=""> 
-              <div class="detail-container">
-                <div class="item-name"> item1 </div>
-                <div class="item-price"> Rp10000 </div>
-              </div>
-              <a href="order.html">Order</a>
-            </div>
-            <div class="item-box">
-              <img src="../assets/cofee.png" alt=""> 
-              <div class="detail-container">
-                <div class="item-name"> item1 </div>
-                <div class="item-price"> Rp10000 </div>
-              </div>
-              <a href="order.html">Order</a>
-            </div>
-            <div class="item-box">
-              <img src="../assets/cofee.png" alt=""> 
-              <div class="detail-container">
-                <div class="item-name"> item1 </div>
-                <div class="item-price"> Rp10000 </div>
+                <div class="item-name">Banana Bread</div>
+                <div class="item-desc">Moist loaf with ripe banana flavor</div>
+                <div class="item-price">Rp20,000</div>
               </div>
               <a href="order.html">Order</a>
             </div>

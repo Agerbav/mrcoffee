@@ -1,8 +1,9 @@
-var popup = document.getElementById("popup");
 
 function openPopup() {
-  popup.classList.remove("open-popup");
+  let popup = document.getElementById("darken");
+  popup.style.display = "";
 }
 function closePopup() {
-  popup.classList.add("open-popup");
+  let popup = document.getElementById("darken");
+  popup.style.display = "none";
 }
