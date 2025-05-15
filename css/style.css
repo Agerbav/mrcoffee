@@ -163,7 +163,7 @@ footer > a:hover{
     border-radius: 20px;
     background: var(--brown-gradient);
     box-shadow: 1px 1px 12px rgba(255, 255, 255, 0.1);
-    width: 20dvw;
+    width: fit-content;
     height: 10dvh;
     position: fixed;
     transform: translate(-50%, -50%);

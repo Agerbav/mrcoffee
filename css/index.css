@@ -186,17 +186,17 @@
 }
 #rewards-container{
   /* border: 1px solid; */
-  border: 5px dashed var(--light-brown);
+  /* border: 5px dashed var(--light-brown); */
   border-radius: 20px;
   /* width: 70dvw; */
-  width: fit-content;
-  overflow-x: hidden;
-  padding: 1rem;
-  gap: 2rem;
+  /* width: fit-content; */
+  /* overflow-x: hidden; */
+  /* padding: 1rem; */
+  /* gap: 2rem; */
   display: flex;
   /* justify-content: center; */
   align-self: center;
-  overflow-x: auto;
+  /* overflow-x: auto; */
   scroll-snap-type: x mandatory;
 
   animation: slidein 1s ease;
@@ -204,38 +204,79 @@
   animation-range: entry 0;
   transition: 100ms ease;
 }
-.reward-item{
+.reward{
   /* border: 1px solid; */
-  flex: none;
-  border-radius: 20px;
-  background-image: linear-gradient(to right, rgba(113, 77, 56, 1), rgba(212, 158, 115, 1));
+  border-radius: 10px;
+  background: var(--brown-gradient);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  height: fit-content;
+
   display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  gap: 0.5rem;
-  align-items: center;
-  min-width: 20dvw;
-  height: 20dvw;
-  text-decoration: none;
+  gap: 0rem;
+
   color: white;
-  font-size: calc(1dvw + 0.3rem);
+  text-decoration: none;
+  font-weight: bolder;
 
-  transition: 250ms ease;
-  align-content: center;
+  transition: 500ms ease;
+}
+.reward h2{
+  /* border: 1px solid; */
+  border-right: 5px dashed var(--light-brown);
+  border-radius: 10px 0 0 10px;
+  /* background: linear-gradient(to bottom right, #FF0000, #8E0904); */
+  background: var(--brown-gradient);
+  width: 35dvw;
+  height: 30dvh;
+
+  margin: 0;
+
+  display: flex;
   justify-content: center;
-}
-.reward-item img{
-  border-radius: 20px;
-  width: 20dvw;
+  align-items: center;
+  text-align: center;
 
-  justify-self: center;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+.reward h3{
+  /* border: 1px solid; */
+  height: fit-content;
+  transform: rotate(-90deg);
+
+  margin: 0;
+
+  display: flex;
+  /* justify-content: center; */
   align-self: center;
+  /* align-content: center; */
+
+  font-size: 3rem;
 }
-.reward-item:hover{
-  cursor: pointer;
+.reward:hover{
   border: 1px solid;
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
+
+@media(max-width:768px){
+  #reward-container{
+    padding: 0;
+  }
+  .reward{
+    transform: scale(0.5);
+    height: 30dvh
+  }
+  .reward h2{
+    width: 50dvh;
+    height: 30dvh;
+    
+  }
+  .reward h3{
+    transform: scale(0.8) rotate(-90deg);
+  }
+}
+
 
 /* about section */
 #about-section{
