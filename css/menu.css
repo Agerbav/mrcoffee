@@ -107,6 +107,7 @@
   border-radius: 20px;
   width: 100px;
   height: 100px;
+  object-fit: cover;
 }
 #menu-container #menu-items .item-box .detail-container{
   /* border: 1px solid; */
@@ -152,6 +153,7 @@
     flex-direction: column;
     padding-bottom: 4rem;
     height: fit-content;
+    gap: 1rem;
   }
   #menu-container #menu-items .item-box img{
     border-radius: 20px;
