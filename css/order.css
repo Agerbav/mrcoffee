@@ -75,7 +75,8 @@
 #user-form-section #user-form p{
     margin-top: -10px;
     padding-left: 1rem;
-    color: rgb(255, 0, 0);
+    color: white;
+    background: rgb(255, 0, 0);
     border-radius: 20px;
     /* text-shadow: 1px 5px 10px rgba(255, 0, 0, 0.5); */
 }
