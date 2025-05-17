@@ -194,12 +194,8 @@
 #rewards-container{
   /* border: 1px solid; */
   /* border: 5px dashed var(--light-brown); */
+  border: none;
   border-radius: 20px;
-  /* width: 70dvw; */
-  /* width: fit-content; */
-  /* overflow-x: hidden; */
-  /* padding: 1rem; */
-  /* gap: 2rem; */
   display: flex;
   /* justify-content: center; */
   align-self: center;

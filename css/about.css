@@ -201,7 +201,7 @@
 /* story section */
 #story-section{
   /* border: 1px solid; */
-  height: 80dvh;
+  height: fit-content;
   align-content: center;
   padding-right: 2rem;
   padding-bottom: 2rem;
@@ -266,5 +266,8 @@
   }
   #story-section div img{
     align-self: none;
+  }
+  #story-section div p{
+    font-size: 1rem;
   }
 }
