@@ -132,6 +132,12 @@ body{
     font-size: 10px;
   }
 }
+@media(max-width:320px){
+  #navbar{
+    font-size: 6px;
+  }
+}
+
 /* footer section */
 footer{
   background: var(--dark-brown);

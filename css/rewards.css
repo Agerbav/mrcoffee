@@ -90,9 +90,11 @@
   padding: 3rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  gap: 2rem;
+  
   display: flex;
+  gap: 2rem;
   /* justify-content: center; */
+  align-items: center;
   align-self: center;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -184,9 +186,11 @@
   #rewards-container{
     padding-top: 0;
     height: fit-content;
-    padding: 0px;
+    height: 30dvh;
+    /* padding-left: 2rem; */
+    padding-bottom: 0;
 
-    gap: 0;
+    gap: 4rem;
   }
   .reward-item{
     transform: scale(0.5);
@@ -196,6 +200,7 @@
     margin-right: -150px;
   }
   .reward-item h2{
+    font-size: 2rem;
     width: 50dvh;
     height: 30dvh;
     
