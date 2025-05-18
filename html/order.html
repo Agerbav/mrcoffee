@@ -25,7 +25,7 @@
           <div id="item-name">
             
           </div>
-          <form id="user-form" name="myForm" onsubmit="return validateForm()">
+          <form id="user-form" name="myForm" method="GET">
             <label for="name">Name</label>
             <input type="text" name="name" value=""> <br>
             <p id="name-valid"></p>
@@ -53,14 +53,13 @@
             </select>
             
             <hr>
-            <section></section>
             <div id="price">
               Total Price:
               <div id="number"></div>
             </div>
-            
-
-            <br><button type="submit">Order Now</button>
+    
+            <br>
+            <button type="submit">Order Now</button>
           </form>
         </div>
       </div>

@@ -12,11 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+document.getElementById("user-form").addEventListener("submit", validateForm);
+
 function hasUpperCase(str) {
     return str !== str.toLowerCase();
 }
 
-function validateForm(){
+function validateForm(event){ 
+    event.preventDefault();
+
     let name = document.forms["myForm"]["name"].value;
     let email = document.forms["myForm"]["email"].value;
     let password = document.forms["myForm"]["password"].value;
@@ -50,30 +54,30 @@ function validateForm(){
     }
 
     if(password == ""){
-        passwordError.innerHTML = "- Password cannot be Empty";
+        passwordError.innerHTML += "- Password cannot be Empty<br>";
         isValid = false;
     }
-    if(password.length < 6 && password.length > 0){
-        passwordError.innerHTML = "- Password must be longer than 6 Characters";
+    if(password.length < 6){
+        passwordError.innerHTML += "- Password must be longer than 6 Characters<br>";
         isValid = false;
+        
     }
     if(!hasUpperCase(password)){
-        if(passwordError == ""){
-            passwordError.innerHTML = ("- Password must have an Uppercase");
-            isValid = false;
-        }else{
-            passwordError.innerHTML.concat("<br>- Password must have an Uppercase");
-            isValid = false;
-        }
+        passwordError.innerHTML += "- Password must have an Uppercase<br>";
+        isValid = false;
     }
 
     if(address == ""){
         addressError.innerHTML = "- Address Cannot be Empty";
         isValid = false;
     }     
-    
-    return isValid;
 
+    console.log(isValid);
+
+    if(isValid === true){
+        // alert("Success");
+        openPopup();
+    }
 }
 
 
