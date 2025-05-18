@@ -96,6 +96,10 @@ body{
   from{transform: translateY(-50vh);}
   to{transform: translateY(0px);}
 }
+@keyframes appearOpacity{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
 
 /* navbar */
 #navbar{
@@ -162,10 +166,14 @@ footer > a:hover{
   height: 100%;
   z-index: 99999;
   background: rgba(0, 0, 0, 0.5);
+
+  animation: appearOpacity ease-in 100ms;
 }
 
 #popup{
     /* border: 1px solid green; */
+    padding-left: 2rem;
+    padding-right: 2rem;
     border-radius: 20px;
     background: var(--brown-gradient);
     box-shadow: 1px 1px 12px rgba(255, 255, 255, 0.1);
@@ -181,4 +189,7 @@ footer > a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    animation: appearOpacity ease-in 500ms;
+
 }

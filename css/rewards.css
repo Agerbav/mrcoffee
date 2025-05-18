@@ -167,6 +167,7 @@
   font-size: 3rem;
 }
 .reward-item:hover{
+  cursor: pointer;
   border: 1px solid;
   transform: scale(1.1);
 }
